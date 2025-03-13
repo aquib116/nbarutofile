@@ -54,10 +54,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
             )
         elif query.data == "start":
             buttons = [[
-                InlineKeyboardButton('💝 sᴜʙsᴄʀɪʙᴇ ᴍʏ ʏᴏᴜᴛᴜʙᴇ ᴄʜᴀɴɴᴇʟ', url='https://youtube.com/@PhdLust')
+                InlineKeyboardButton('💝 JOIN ANIME CHANNEL', url='https://t.me/chrunchyrool')
             ],[
-                InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/ultroidxTeam'),
-                InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/ultroid_official')
+                InlineKeyboardButton('🔍 sᴜᴘᴘᴏʀᴛ ɢʀᴏᴜᴘ', url='https://t.me/+zlb3ReuJ40tjMDA1'),
+                InlineKeyboardButton('🤖 ᴜᴘᴅᴀᴛᴇ ᴄʜᴀɴɴᴇʟ', url='https://t.me/KGN_BOT_Z')
             ],[
                 InlineKeyboardButton('💁‍♀️ ʜᴇʟᴘ', callback_data='help'),
                 InlineKeyboardButton('😊 ᴀʙᴏᴜᴛ', callback_data='about')
@@ -158,7 +158,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 # Add "Get File" button with last command
                 buttons.append(InlineKeyboardButton(
                     text="↺ Get File",
-                    url=f"https://t.me/{client.username}?start={last_cmd}"
+                    url=f"https://telegram.me/KGN_File_Store_Bot?start=" + linkParam"
                 ))
             except IndexError:
                 pass
