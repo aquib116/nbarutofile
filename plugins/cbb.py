@@ -158,7 +158,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 # Add "Get File" button with last command
                 buttons.append(InlineKeyboardButton(
                     text="↺ Get File",
-                    url=f"https://telegram.me/KGN_File_Store_Bot?start=" + linkParam"
+                    url=f"https://t.me/{client.username}?start={last_cmd}"
                 ))
             except IndexError:
                 pass
